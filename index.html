@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.111.3">
+    <title>Projets Epita</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+
+    
+
+    
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      h1 {
+        font-size: 25px;
+        text-decoration: underline;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      li:before {
+        content: "•";
+        margin-right: 5px;
+      }
+
+      li {
+        font-size: 20px;
+        margin: 10px;
+      }
+
+      li .bold {
+        font-weight: bold;
+        font-size: 20px;
+        display: inline-block;
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+    </style>
+
+    
+  </head>
+  <body>
+<header data-bs-theme="dark">
+  <div class="collapse text-bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4>A propos</h4>
+          <p class="text-body-secondary">Ce site Internet résume les projets que j'ai eu l'occasion d'effectuer durant ma scolarité à Epita ou durant mes stages en entreprise. Les projets personnels ne sont pas présentés ici.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4>Contact</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://www.linkedin.com/in/grégoire-vest-9377b8267/" class="text-white">Follow on LinkedIn</a></li>
+            <li><a href="mailto:vest.gregoire09@gmail.com" class="text-white">Email me</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <img src="images/projet.png" width="50px" height="100%" />
+        <strong>Projets</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Album de projets</h1>
+        <p class="lead text-body-secondary">Voici tous les gros projets que j'ai effectué jusqu'à aujourd'hui. Le plus récent est en premier</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <title>Tiger</title><img src="images/tiger.png" width="100%" height="100%" />
+            <div class="card-body">
+              <h1>Tiger</h1>
+              <p class="card-text">Création d'un compilateur du langage Tiger, langage créé pour l'apprentissage et la compréhension des compilateurs</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalWindow1">View</button>
+                  <div class="modal fade" id="modalWindow1" aria-labelledby="modal tiger" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title">Projet TIGER</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <ul>
+                          <li><div class="bold">Type de projet</div>: école</li>
+                          <li><div class="bold">Nombre de personnes</div>: 4</li>
+                          <li><div class="bold">Période</div>: février-mars 2023</li>
+                          <li><div class="bold">Durée</div>: 7 semaines</li>
+                          <li><div class="bold">Langages utilisés</div>: C++, Re/Flex, Bison</li>
+                          <li><div class="bold">But</div>: créer un compilateur</li>
+                          <li><div class="bold">Description</div>: Projet historique de l'école ! Le projet était construit de manière à nous projeter dans une situation en entreprise. Beaucoup de code nous était donné, et certaines parties étaient supprimées : c'étaient les parties que nous devions implémenter, un peu à la manière d'un "code à trou". Toute une documentation nous était fournie avec une étape à effectuer par semaine. Par exemple, la première semaine, nous devions implémenter un lexer et un parser fonctionnels. En tout, 7000 lignes de code ont été supprimées</li>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="close"> Fermer
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <small class="text-body-secondary">7 semaines</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <title>42sh</title><img src="images/42sh.jpg" width="100%" height="100%" />
+            <div class="card-body">
+              <h1>42sh</h1>
+              <p class="card-text">Création d'un langage de programmation basé sur le Shell.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalWindow2">View</button>
+                  <div class="modal fade" id="modalWindow2" aria-labelledby="modal exemple" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title">Projet 42SH</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <ul>
+                          <li><div class="bold">Type de projet</div>: école</li>
+                          <li><div class="bold">Nombre de personnes</div>: 4</li>
+                          <li><div class="bold">Période</div>: janvier 2023</li>
+                          <li><div class="bold">Durée</div>: 4 semaines</li>
+                          <li><div class="bold">Langage utilisé</div>: C</li>
+                          <li><div class="bold">But</div>: créer un shell</li>
+                          <li><div class="bold">Description</div>: Deuxième projet historique de l'école ! Des étapes étaient demandées chaque semaine pour créer petit à petit un shell de style bash. L'utilisateur pouvait, à la fin du projet, utiliser les principales commandes connues d'un système Unix. Nous pouvions découper le projet en 5 parties : interface utilisateur, lexer, parser, AST et exécution. Ce projet a été codé en partant de 0 mais avec beaucoup de documentation fournies par l'école.</li>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="close"> Fermer
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <small class="text-body-secondary">4 semaines</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <title>Piscines</title><img src="images/piscine.jpg" width="100%" height="100%" />
+            <div class="card-body">
+              <h1>Piscines (C/C++/SQL/Java/JS)</h1>
+              <p class="card-text">Ateliers d'une durée de 1 à 2 semaines, comprenant des horaires de 8h à 24h, pour apprendre un langage de programmation</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalWindow3">View</button>
+                  <div class="modal fade" id="modalWindow3" aria-labelledby="modal exemple" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title">Piscines</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <ul>
+                          <li><div class="bold">Type de projet</div>: école</li>
+                          <li><div class="bold">Nombre de personnes</div>: individuel</li>
+                          <li><div class="bold">Période</div>: durant les deux semestres ING1 (S5 et S6) - 2022/2023</li>
+                          <li><div class="bold">Durées</div>: 2 semaines pour le C, 1 semaine pour les autres (C++/Java/JS/SQL)</li>
+                          <li><div class="bold">Langages utilisés</div>: C, C++, Java, JavaScript, SQL</li>
+                          <li><div class="bold">But</div>: apprendre un langage de programmation</li>
+                          <li><div class="bold">Description</div>: immersion totale dans les salles machines de l'Epita, l'intérêt de l'apprentissage en piscine est de faire face aux difficultés du langage appris pendant 16h par jour. Un arbre d'exercices obligatoires devait être validé pendant les 2/3 de la piscine pour avoir la note minimale, puis un rush obligatoire devait être effectué pendant le tiers restant, comprenant un projet individuel, pour mettre en pratique tout ce que nous avions appris.</li>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="close"> Fermer
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <small class="text-body-secondary">1 ou 2 semaines</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <title>Decolor</title><img src="images/decolor.png" width="100%" height="100%" />
+            <div class="card-body">
+              <h1>Decolor</h1>
+              <p class="card-text">Création d'une application de dessin digital dans le but de mettre en pratique des concepts algorithmiques</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalWindow4">View</button>
+                  <div class="modal fade" id="modalWindow4" aria-labelledby="modal exemple" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title">Projet Decolor</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <ul>
+                          <li><div class="bold">Site Internet</div>: <a href="https://topagrume.github.io/decolor_web/accueil.html">https://topagrume.github.io/decolor_web/accueil.html</a></li>
+                          <li><div class="bold">Type de projet</div>: école</li>
+                          <li><div class="bold">Nombre de personnes</div>: 4</li>
+                          <li><div class="bold">Période</div>: deuxième semestre SPE (S4) - 2022</li>
+                          <li><div class="bold">Durée</div>: 8 semaines</li>
+                          <li><div class="bold">Langage utilisé</div>: C</li>
+                          <li><div class="bold">But</div>: créer une application en utilisant des concepts algorithmiques</li>
+                          <li><div class="bold">Description</div>: le choix du projet était totalement libre, nous avons alors décidé de créer une application de dessin digital. Le projet devait être créé en partant de 0, en fournissant un cahier des charges ainsi que des rapports toutes les 2-3 semaines.</li>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="close"> Fermer
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <small class="text-body-secondary">8 semaines</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <title>Sudoku OCR</title><img src="images/ocr.png" width="100%" height="100%" />
+            <div class="card-body">
+              <h1>Sudoku OCR</h1>
+              <p class="card-text">Création d'un OCR permettant de reconnaitre et de résoudre l'image d'une grille de Sudoku</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalWindow5">View</button>
+                  <div class="modal fade" id="modalWindow5" aria-labelledby="modal exemple" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title">Projet Sudoku OCR</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <ul>
+                          <li><div class="bold">Type de projet</div>: école</li>
+                          <li><div class="bold">Nombre de personnes</div>: 4</li>
+                          <li><div class="bold">Période</div>: premier semestre SPE (S3) - 2021</li>
+                          <li><div class="bold">Durée</div>: 8 semaines</li>
+                          <li><div class="bold">Langage utilisé</div>: C</li>
+                          <li><div class="bold">But</div>: créer un OCR pour résoudre un Sudoku donné en image</li>
+                          <li><div class="bold">Description</div>: le projet était plutôt libre dans sa réalisation car il y avait peu de documentation. Nous devions apprendre nous-mêmes à créer et utiliser un réseau de neurones. Un rapport sur le projet était demandé au milieu et à la fin du projet.</li>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="close"> Fermer
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <small class="text-body-secondary">8 semaines</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <title>Astec</title><img src="images/astec.png" width="100%" height="100%" />
+            <div class="card-body">
+              <h1>Site internet ASTEC</h1>
+              <p class="card-text">Création du site Internet pour l'entreprise ASTEC Asecnseurs Techniques</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalWindow6">View</button>
+                  <div class="modal fade" id="modalWindow6" aria-labelledby="modal exemple" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title">Site Internet ASTEC</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close">
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <ul>
+                          <li><div class="bold">Site Internet</div>: <a href="https://www.astec-ascenseurs.fr">https://www.astec-ascenseurs.fr</a></li>
+                          <li><div class="bold">Type de projet</div>: entreprise</li>
+                          <li><div class="bold">Nombre de personnes</div>: individuel</li>
+                          <li><div class="bold">Période</div>: juillet 2021</li>
+                          <li><div class="bold">Durée</div>: 4 semaines</li>
+                          <li><div class="bold">Langage utilisé</div>: HTML, CSS, JS, PHP</li>
+                          <li><div class="bold">But</div>: créer le site internet de l'entreprise</li>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="close"> Fermer
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <small class="text-body-secondary">8 semaines</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-body-secondary py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Revenir en haut</a>
+    </p>
+    <p class="mb-1">Cet album à été fait avec l'utilistation du framework &copy; Bootstrap, uniquement dans un but créer un site de présentation.</p>
+    <p class="mb-0">Page d'accueil bootstrap : <a href="https://getbootstrap.com">Bootstrap</a></p>
+  </div>
+</footer>
+  
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
